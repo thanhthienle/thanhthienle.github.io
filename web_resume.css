@@ -7,7 +7,7 @@ body {
 
 h1 {
    margin-top: 50px;
-   /* margin-bottom: 15px; */
+   margin-bottom: -5px;
 }
 
 h6 {
@@ -127,19 +127,53 @@ footer {
 .header-content {
    position: relative;
    text-align: center;
+   display:flex;
+   justify-content: center;
+   align-items: center;
 }
 .text-content {
    display: inline-block;
 }
-.image-content {
+/* .image-content {
    position: absolute;
    right: 20%;
-   top: 50%;
+   top: 55%;
    transform: translateY(-50%);
+} */
+.image-content {
+   margin-left: 77px;
 }
 .profile-image {
    width: 150px; /* Adjust the size as needed */
    height: 150px;
-   border-radius: 10%; /* Creates the circular frame */
+   border-radius: 15%; /* Creates the circular frame */
    object-fit: cover;
+}
+
+/* Media query for screens smaller than 768px (common mobile size) */
+@media (max-width: 768px) {
+   .header-content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   
+   .image-content {
+      margin-top: 8px;
+      margin-left: 0;
+      margin-bottom: 0px; /* Space between the image and the text */
+      text-align: center;
+   }
+
+   .profile-image {
+      width: 256px; /* Adjust the size as needed */
+      height: 256px;
+      border-radius: 10%; /* Creates the circular frame */
+      object-fit: cover;
+   }
+
+   h1 {
+      margin-top: 30px;
+      /* margin-bottom: 15px; */
+   }
 }
