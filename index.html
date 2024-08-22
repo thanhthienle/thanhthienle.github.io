@@ -1,0 +1,341 @@
+<!-- Template by Ngoc N. Tran -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6LL221VH1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G6LL221VH1');
+   </script>
+
+   <title>Thanh-Thien Le's homepage</title>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=.75">
+   <meta name="description" content="Thanh-Thien Le's biography, resume, and more.">
+   <meta name="author" content="Thanh-Thien Le (thienlt.7@gmail.com)">
+   <meta name="keywords" content="Thanh-Thien, Thanh Thien, machine learning, artificial intelligence, natural language processing">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="web_resume.css">
+   <script type="text/javascript" src="web_resume.js"></script>
+   <script type="text/javascript" src="dark_mode.js"></script>
+</head>
+
+<body>
+   <div id="blocker"></div>
+   <header>
+      <div class="header-content">
+         <div class="text-content">
+            <h1>Thanh-Thiên Lê</h1>
+            <h7>if you have to refer to my name in one word, it's Thiên.</h7>
+            <h6>thienlt7 [at] gmail [dot] com</h6>
+         </div>
+         <div class="image-content">
+            <img src="avatar.jpeg" alt="My avatar" class="profile-image">
+         </div>
+      </div>
+      <div class="container">
+         <div class="row justify-content-center" id="navlinks">
+            <div class="col col-md-2"><a class="navlink" href="https://github.com/thanhthienle" title="My repos">GitHub</a></div>
+            <div class="col col-md-2"><a class="navlink" href="https://linkedin.com/in/thanhthienle" title="Less updated than here. Connect with me.">LinkedIn</a></div>
+            <div class="col col-md-2"><a class="navlink" href="https://scholar.google.com/citations?user=yOAHOggAAAAJ" title="Research works">Scholar</a></div>
+            <div class="col col-md-2"><a class="navlink" href="resume.pdf" title="Resume in PDF form">Resume</a></div>
+            <div class="col col-md-2"><a class="navlink" href="https://x.com/theblsky" title="Follow me on Twitter.">X/Twitter</a></div>
+         </div>
+      </div>
+   </header>
+
+   <div class="container">
+      <div class="resume-block" id="prof-content">
+         <b>I am actively looking for Ph.D. position in Computer Science in the upcoming academic year.</b>
+      </div>
+   </div>
+
+   <div class="container" id="main-content">
+      <div class="row">
+         <div class="col col-3 d-none d-md-block" id="table-of-content">
+            <div id="toc-inner">
+               <p onclick="goto('prof')">Profile</p>
+               <p onclick="goto('educ')">Education</p>
+               <p onclick="goto('work')">Experience</p>
+               <p onclick="goto('pub')">Publications</p>
+               <!-- <p onclick="goto('proj')">Projects</p> -->
+               <p onclick="goto('skills')">Languages</p>
+               <p onclick="apply_all(collapse)" style="font-size: 15px; margin-bottom: 0; margin-top: 3em">Collapse all</p>
+               <p onclick="apply_all(expand)" style="font-size: 15px; margin-bottom: 0">Expand all</p>
+               <p onclick="toggle_dark()" style="font-size: 15px" id="color_toggle">Light mode</p>
+            </div>
+         </div>
+         <div class="col" id="content">
+            <div class="block-title" id="prof" style="margin-top: 0">Profile</div>
+            <div class="resume-block" id="prof-content">
+               NLP Research Resident at VinAI Research, advised by <a href="https://ix.cs.uoregon.edu/~thien/">Asst. Prof. Thien Huu Nguyen</a>.<br/>
+               I work on LLMs (inference, truthfulness, trustworthy, safety). I work on Information Extraction.<br/>
+               I work on Continual Learning.<br/>
+               I am curious about (and willing to learn) everything.
+            </div>
+
+            <div class="block-title" id="educ">Education</div>
+            <div class="resume-block" id="educ-content">
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <b>B.S. Computer Science</b> GPA: 4/4 (Rounding to the Nearest Integer &#128640;).
+                     </div>
+                     <div class="col col-auto" style="padding-right: 0; text-align: right">
+                        Oct 2023
+                     </div>
+                  </div>
+                  <div class="row entry-content">
+                     <!-- <p><b>Minor(s): Computer Science</b></p> -->
+                     <!-- <p>Summa Cum Laude</p> -->
+                     <p>Hanoi University of Science and Technology, Hanoi, Vietnam</p>
+                     <p class="courses-title" id="waf-ctitle" style="margin-top: .25em; padding-left: 5px; padding-right: 40px; font-style: italic">
+                        <code>+</code>&NonBreakingSpace; Notable courses taken:</p>
+                     <ul class="course-list" id="waf-list" style="padding-left: 40px; padding-right: 40px;">
+                        <li>Linear Algebra</li>
+                        <li>Probability and Statistics</li>
+                        <li>Machine Learning and Data Mining</li>
+                        <li>Information Retrieval</li>
+                        <li>Deep Learning and Its Applications</li>
+                        <li>Data Science</li>
+                        <li>Fundamentals of Optimization</li>
+                        <li>Programming Techniques</li>
+                        <li>Computer Architecture</li>
+                        <li>Evolutionary Computation</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Discrete Mathematics</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <div class="block-title" id="work">Experience</div>
+            <div class="resume-block" id="work-content">
+               <div class="block-entry">
+                  <div class="block-entry">
+                     <div class="row">
+                        <div class="col" style="padding-left: 0">
+                           <p><b>Research Resident</b></p>
+                           <p>VinAI Research, Hanoi, Vietnam</p>
+                        </div>
+                        <div class="col col-auto" style="padding-right: 0; text-align: right">
+                           Feb 2023 - Present
+                        </div>
+                     </div>
+                     <div class="row entry-content">
+                        <ul>
+                           <li>Conducted research in Large Language Models</li>
+                           <li>Conducted research in Continual Information Extraction</li>
+                           <li>Participated in weekly meetings of the NLP reading group</li>
+                           <li>Attended courses relevant to research interests</li>
+                        </ul>
+                     </div>
+                  </div>
+            </div>
+            </div>
+
+            <div class="block-title" id="pub">
+               Publications
+               <span style="font-size: 1rem; transition: opacity 0.25s;">&nbsp;&nbsp;<i>Asterisk</i> (*) denotes equal contribution.</span>
+            </div>
+
+            <div class="resume-block" id="pub-content">
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>Continual Relation Extraction via Sequential Multi-Task Learning</b></p>
+                        <p><b>Thanh-Thien Le</b>*, Manh Nguyen*, Tung Thanh Nguyen*, Linh Ngo Van, Thien Huu Nguyen</p>
+                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29805">
+                           AAAI 2024
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="https://github.com/ngoctnq/rosa" class="disabled">
+                           Code
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We propose a novel multi-task learning framework to effectively handle catastrophic forgetting in Continual Relation Extraction.
+                  </div>
+               </div>
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>SharpSeq: Empowering Continual Event Detection through Sharpness-Aware Sequential-task Learning</b></p>
+                        <p><b>Thanh-Thien Le</b>*, Viet Dao*, Linh Van Nguyen*, Thi-Nhung Nguyen, Linh Ngo Van, Thien Huu Nguyen</p>
+                        <a href="https://aclanthology.org/2024.naacl-long.200">
+                           NAACL 2024
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="https://github.com/ngoctnq/ssa-clr" class="disabled">
+                           Code
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We design a Sharpness-Aware framework to tackle the the Sequential-Task challenge of Continual Event Detection.
+                  </div>
+               </div>
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>Realistic Evaluation of Toxicity in Large Language Models</b></p>
+                        <p>Tinh Son Luong*, <b>Thanh-Thien Le</b>*, Linh Ngo Van, Thien Huu Nguyen</p>
+                        <a href="https://arxiv.org/abs/2405.10659">
+                           ACL 2024
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="not_a_link_lol" class="disabled">
+                           Code
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We introduce a realistic dataset for safety evaluation of LLMs which is more competent in exposing toxicity in LLMs than state-of-the-art datasets.
+                  </div>
+               </div>
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>PhoWhisper: Automatic Speech Recognition for Vietnamese</b></p>
+                        <p><b>Thanh-Thien Le</b>, Linh The Nguyen, Dat Quoc Nguyen</p>
+                        <a href="https://openreview.net/pdf?id=qsif2awK2L">
+                           Tiny Paper @ ICLR 2024
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="https://github.com/VinAIResearch/PhoWhisper">
+                           Model
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We fine-tune the Whisper model on an 844-hour dataset that encompasses diverse Vietnamese accents.
+                  </div>
+               </div>
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>ToVo: Toxicity Taxonomy via Voting</b></p>
+                        <p>Tinh Son Luong*, <b>Thanh-Thien Le</b>*, Thang Viet Doan*, Linh Ngo Van, Thien Huu Nguyen, Diep Nguyen</p>
+                        <a href="https://arxiv.org/abs/2406.14835">
+                           Preprint
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="https://huggingface.co/convoicon/Modestus">
+                           Model
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We introduce a method for effortless, automatic creation of customized moderation tools, and an accompanying dataset named ToVo.
+                  </div>
+               </div>
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>Lifelong Event Detection via Optimal Transport</b></p>
+                        <p>Viet Dao*, Van-Cuong Pham*, Quyen Tran*, <b>Thanh-Thien Le</b>*, Linh Ngo Van, Thien Huu Nguyen</p>
+                        <a href="#" class="disabled">
+                           Under review
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="#" class="disabled">
+                           Code
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We propose aligning the classifier module to the pre-trained language modeling head via optimal transport to enhance Continual Event Detection.
+                  </div>
+               </div>
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>Few-Shot, No Problem: Descriptive Continual Relation Extraction</b></p>
+                        <p>Thanh Nguyen*, Anh Duc Le*, Quyen Tran*, <b>Thanh-Thien Le</b>*, Linh Ngo Van, Thien Huu Nguyen</p>
+                        <a href="#" class="disabled">
+                           Under review
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="#" class="disabled">
+                           Code
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We design a retrieval-based paradigm, leveraging LLM-generated descriptions to address Few-shot Continual Relation Extraction, boosting performance and reducing forgetting.
+                  </div>
+               </div>
+
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>Adaptive Prompting for Continual Relation Extraction: A Within-Task Variance Perspective</b></p>
+                        <p>Minh Le*, Tien-Ngoc Luu*, An Nguyen The*, <b>Thanh-Thien Le</b>, Thien Trang Nguyen Vu, Thanh Tung Nguyen Van, Linh Ngo Van, Thien Huu Nguyen</p>
+                        <a href="#" class="disabled">
+                           Under review
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="#" class="disabled">
+                           Code
+                        </a>
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     We improve prompt-based Continual Relation Extraction by incorporating task-specific prompt pool that capture the variations within each task while maximizing cross-task variances.
+                  </div>
+               </div>
+            </div>
+
+            <!-- <div class="block-title" id="proj">Projects</div>
+            <div class="resume-block" id="proj-content">
+               <div class="block-entry">
+                  <div class="row">
+                     <div class="col" style="padding-left: 0">
+                        <p><b>This is a Project Name</b></p>
+                        <p>Absolutely Personal, Dream, Heaven</p>
+                        <a href="#">
+                           Link to project
+                        </a>
+                     </div>
+                     <div class="col col-auto" style="padding-right: 0; text-align: right">
+                        Fall 2099
+                     </div>
+                  </div>
+                  <div class="row entry-content" style="padding-left: 40px; padding-right: 40px">
+                     Description.
+                  </div>
+               </div>
+            </div> -->
+
+            <div class="block-title" id="skills">Languages</div>
+            <div class="resume-block" id="skills-content">
+               <ul>
+                  <li>Programming Languages: Python, C/C++</li>
+                  <li>Libraries/Modules: PyTorch, NumPy/SciPy, pandas, matplotlib, seaborn, cvxpy</li>
+                  <li>Language Proficiency: English (fluent), Vietnamese (native)</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      Special thank to <a href="https://ngoc.io">Ngoc N. Tran</a> for letting me use this template.
+   </footer>
+</body>
+
+</html>

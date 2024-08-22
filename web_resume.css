@@ -1,0 +1,145 @@
+body {
+   font-family: serif;
+   background: #313131;
+   color: #f0f0f0;
+   transition: background .2s linear, color .2s linear;
+}
+
+h1 {
+   margin-top: 50px;
+   /* margin-bottom: 15px; */
+}
+
+h6 {
+   margin-top: 27px;
+   margin-bottom: 30px;
+   font-family: monospace;
+   /* font-style: italic */
+}
+
+h7 {
+   font-family: monospace;
+   font-size: 12px;
+   /* font-style: italic */
+}
+
+#navlinks {
+   font-size: 14px;
+}
+
+#navlinks:after {
+   border-bottom: 1px solid #888;
+   content: '';
+   display: block;
+   width: 100%;
+   padding-bottom: 20px;
+}
+
+#main-content {
+   padding-top: 10px;
+}
+
+#blocker {
+   background: #313131;
+   color: #f0f0f0;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0px;
+   z-index: 1;
+   pointer-events: none;
+   opacity: 100%;
+   transition: opacity 1s ease-in-out;
+}
+a, a:visited, a:hover {
+   color: #EC625F;
+   text-decoration: none;
+   font-style: italic;
+}
+.disabled, .disabled:visited {
+   color: #999999;
+   pointer-events: none;
+   cursor: default;
+}
+.navlink, .navlink:visited, .navlink:hover {
+   font-family: monospace;
+   font-style: normal
+}
+.navlink:hover {
+   text-decoration: underline;
+}
+header {
+   margin: 2em 0;
+   text-align: center;
+}
+footer {
+   font-family: monospace;
+   font-size: 10px;
+   text-align: center;
+   color: #999999;
+   margin-top: 3em;
+}
+.row{
+   margin-left: 0;
+   margin-right: 0;
+   word-wrap: break-word;
+}
+#table-of-content {
+   font-size: 18px;
+   padding-top: 4px;
+   max-width: 200px;
+   /*margin-left: 1em;*/
+}
+#toc-inner {
+   position: sticky;
+   top: 5%;
+}
+#toc-inner p, .block-title, .courses-title {
+   cursor: pointer
+}
+#content {
+   padding-right: 1em;
+}
+.block-title {
+   font-size: 23px;
+   margin-top: 1em;
+   margin-bottom: .25em;
+}
+.block-entry {
+   margin-bottom: 1em;
+}
+.block-entry .entry-content {
+   display: block;
+}
+.block-entry p {
+   margin-bottom: 0;
+}
+.resume-block, .course-list {
+   overflow: hidden;
+   transition: height 0.3s ease-out;
+}
+.resume-block {
+   height: auto;
+}
+.course-list {
+   height: 0px;
+}
+.header-content {
+   position: relative;
+   text-align: center;
+}
+.text-content {
+   display: inline-block;
+}
+.image-content {
+   position: absolute;
+   right: 20%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.profile-image {
+   width: 150px; /* Adjust the size as needed */
+   height: 150px;
+   border-radius: 10%; /* Creates the circular frame */
+   object-fit: cover;
+}
